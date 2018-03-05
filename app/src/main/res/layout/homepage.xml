@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.zhouwei.mzbanner.MZBannerView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="9dp"
+                app:open_mz_mode="true"
+                app:canLoop="true"
+                app:middle_page_cover="true"
+                app:indicatorAlign="center"
+                app:indicatorPaddingLeft="9dp"
+                />
+            <TableLayout
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:padding="9dp"
+                android:id="@+id/iconTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/icon1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#ccccff"
+                        android:textSize="38dp"
+                        android:text="&#xe501;"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon2"
+                        android:text="&#xe676;"
+                        android:textColor="#ff1a8c"
+                        android:textSize="40dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon3"
+                        android:text="&#xec52;"
+                        android:textColor="#8080ff"
+                        android:textSize="40dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon4"
+                        android:text="&#xe6c1;"
+                        android:textColor="#B380FF"
+                        android:textSize="40dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon5"
+                        android:text="&#xe606;"
+                        android:textColor="#b3b3b3"
+                        android:textSize="35dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/iconName1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:textSize="10dp"
+                        android:text="男性健康"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName2"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="幼妇保健"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName3"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="营养滋补"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName4"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="健康视频"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName5"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="病毒防治"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:id="@+id/icon6"
+                        android:textColor="#00b2b3"
+                        android:textSize="40dp"
+                        android:text="&#xe795;"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon7"
+                        android:text="&#xe614;"
+                        android:textColor="#ffa64d"
+                        android:textSize="38dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/icon8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="&#xe611;"
+                        android:textColor="#EE807A"
+                        android:textSize="38dp" />
+
+                    <TextView
+                        android:id="@+id/icon9"
+                        android:text="&#xe612;"
+                        android:textColor="#4D89CB"
+                        android:textSize="38dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon10"
+                        android:text="&#xe6ae;"
+                        android:textColor="#b3b3ff"
+                        android:textSize="38dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/iconName6"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="慢病管家"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName7"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="疾病诊断"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName8"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="病情简介"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName9"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="轻松找药"
+                        android:textSize="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/iconName10"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:textSize="10dp"
+                        android:text="成人用品"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </TableRow>
+            </TableLayout>
+
+            <!--公告：-->
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:background="@drawable/gonggao_divider"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="药瓣公告"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:height="25dp"
+                    android:textColor="#fff"
+                    android:background="#ff4d4d"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="关于活动的公告"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#ff4d4d"
+                    android:layout_weight="6"
+                    android:height="40dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--抑郁、鼻炎、补钙：-->
+
+            <!--抑郁：-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/yiyu_pic" />
+                </TableRow>
+                <TableRow>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:onClick="goToMedicineDetails"
+                            android:src="@drawable/yiyu_medicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="新一代抗抑郁药"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/yiyuMedicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥102.0"
+                            android:textColor="#ff00" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:onClick="goToMedicineDetails"
+                            android:id="@+id/yiyuMedicne2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/yiyu_medicine3" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="适合重度抑郁患者"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#ff00"
+                            android:text="￥228.0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:onClick="goToMedicineDetails"
+                            android:src="@drawable/yiyu_medicine4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="性价比高的抑郁药"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#ff00"
+                            android:text="￥54.0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <!--补钙：-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/bugai_pic" />
+                </TableRow>
+                <TableRow>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/bugai_medicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="每片含600mg钙量"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥45.0"
+                            android:textColor="#ff00" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/yiyu_medicine3" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="药师推荐钙锌同补"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#ff00"
+                            android:text="￥35.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:src="@drawable/bugai_medicine3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="预防骨质酥松"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#ff00"
+                            android:text="￥99.0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <!--鼻炎：-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/biyan_pic" />
+                </TableRow>
+                <TableRow>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/biyan_medicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="有效改善鼻炎症状"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥45.0"
+                            android:textColor="#ff00" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/biyan_medicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="强效长效鼻炎药"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥33.9"
+                            android:textColor="#ff00" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/biyan_medicine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            android:text="过敏性鼻炎疗效好"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥6.9"
+                            android:textColor="#ff00" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <!--底部导航：-->
+    <LinearLayout
+        android:background="#eee"
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:onClick="goToGoodTuijian"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tuijianIcon"
+                android:text="&#xe708;"
+                android:textColor="#FF4D4D"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tuijian"
+                android:text="推荐"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="goToFenLei"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/fenleiIcon"
+                android:text="&#xe636;"
+                android:textColor="#FF4D4D"
+                android:textSize="30dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fenlei"
+                android:text="分类"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="goToCart"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cartIcon"
+                android:text="&#xe604;"
+                android:textColor="#FF4D4D"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cart"
+                android:text="购物车"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="goToUserCenter"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userInfoIcon"
+                android:text="&#xe601;"
+                android:textColor="#FF4D4D"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/userInfo"
+                android:text="我的"
+                android:textColor="#808080"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

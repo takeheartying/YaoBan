@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.io.yaoban">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--药物具体详情：-->
+        <activity
+            android:name=".GoodsDetails"
+            android:label="@string/app_name">
+        </activity>
+        <!--分类：-->
+        <activity
+            android:name=".FenLeiActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--购物车：-->
+        <activity
+            android:name=".UserCenterActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--购物车：-->
+        <activity
+            android:name=".CartActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--推荐商品：-->
+        <activity
+            android:name=".GoodTuiJianActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--app首页：-->
+        <activity
+            android:name=".HomePage"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--登录：-->
+        <activity
+            android:name=".RegistActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--登录：-->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--app首页登录注册-->
+        <activity
+            android:name=".LoginAndRegist"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

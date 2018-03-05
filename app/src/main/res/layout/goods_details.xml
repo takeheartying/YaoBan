@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/goodsImg"
+                android:src="@drawable/yiyu_medicine1"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:background="@drawable/top_bottom_border"
+                android:id="@+id/goodsDesc"
+                android:textColor="#ff3333"
+                android:text="新一代抗抑郁药，对焦虑同样有效"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:id="@+id/goodsName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/top_bottom_border"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="来士普 草酸艾司西酞普兰片 10mg*7片" />
+            <TextView
+                android:background="@drawable/top_bottom_border"
+                android:id="@+id/goodsTag"
+                android:text="进口 西药"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:background="@drawable/top_bottom_border"
+                android:id="@+id/goodsPrice"
+                android:textColor="#ff3333"
+                android:text="￥102.00"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="addToCart"
+            android:text="加入购物车"
+            android:textColor="#fff"
+            android:background="#ff3333"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:id="@+id/addToChatBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</RelativeLayout>
